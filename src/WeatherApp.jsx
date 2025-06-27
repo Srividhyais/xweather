@@ -27,7 +27,8 @@ const WeatherApp = () => {
     } catch (error) {
       alert("Failed to fetch weather data");
     } finally {
-      setLoading(false);
+       await new Promise((resolve) => setTimeout(resolve, 500)); 
+       setLoading(false);
     }
   };
 
