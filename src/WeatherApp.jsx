@@ -48,7 +48,7 @@ const WeatherApp = () => {
       </button>
       </div>
 
-      {loading ? <p>Loading data…</p> : null}
+      {loading ? <p>Loading data...</p> : null}
 
       {weather && (
         <div className="weather-cards" style={{ marginTop: "20px", display: "flex", gap: "15px" }}>
